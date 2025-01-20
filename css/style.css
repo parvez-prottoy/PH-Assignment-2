@@ -25,6 +25,9 @@
 
   --p-max: 1.5rem;
   --p-min: 1.2rem;
+
+  --logo-max: 6.2rem;
+  --logo-min: 4.6rem;
 }
 *,
 *::before,
@@ -39,6 +42,7 @@ html {
 }
 body {
   font-family: "Quicksand", serif;
+  background: rgb(247, 247, 247);
 }
 img {
   width: 100%;
@@ -72,4 +76,64 @@ p {
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+.btn {
+  border: none;
+  border-radius: 12px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--white);
+  cursor: pointer;
+}
 /* ---------------------- reuseable style end ---------------------- */
+/* ---------------------- header section start ---------------------- */
+header {
+  padding: 2rem 0;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.logo img {
+  width: clamp(var(--logo-min), 5vw, var(--logo-max));
+}
+.logo > h2 > span {
+  color: var(--orange);
+}
+.navItems {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.navItem-1 {
+  color: var(--orange);
+}
+.navItem-2 {
+  color: var(--skyBlue);
+}
+.navItem-3 {
+  color: var(--darkTurquoise);
+}
+.navItem-4 {
+  color: var(--majoretteBlue);
+}
+.contact-btn {
+  background-color: var(--orange);
+  padding: 1rem 6rem;
+  opacity: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+.contact-btn:hover {
+  opacity: 80%;
+}
+.hamburger-menu {
+  display: none;
+}
+/* ---------------------- header section end ---------------------- */

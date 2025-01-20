@@ -1,0 +1,35 @@
+/* ---------------------- laptop style start ---------------------- */
+@media screen and (max-width: 1282px) {
+}
+/* ---------------------- laptop style end ---------------------- */
+/* ---------------------- tablet style start ---------------------- */
+@media screen and (max-width: 1024px) {
+  .navItems {
+    display: none;
+  }
+}
+/* ---------------------- tablet style end ---------------------- */
+/* ---------------------- mobile style start ---------------------- */
+@media screen and (max-width: 640px) {
+  header {
+    border-bottom: 2px solid var(--orange);
+  }
+  .logo > h2 {
+    display: none;
+  }
+  .contact-btn {
+    display: none;
+  }
+  .hamburger-menu {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    color: var(--black);
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  .hamburger-menu:hover {
+    color: var(--orange);
+  }
+}
+/* ---------------------- mobile style  ---------------------- */
