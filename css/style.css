@@ -1,5 +1,16 @@
 /* ---------------------- default style start ---------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+:root {
+  /* colors */
+  --black: #111111;
+  --white: #ffffff;
+  --orange: #fea301;
+  --skyBlue: #01acfd;
+  --darkTurquoise: #05d4df;
+  --majoretteBlue: #5d58ef;
+  --lightWhite: #f7f7f7;
+  --gray: #808080;
+}
 *,
 *::before,
 *::after {
@@ -25,3 +36,10 @@ a {
   text-decoration: none;
 }
 /* ---------------------- default style end ---------------------- */
+/* ---------------------- reuseable style start ---------------------- */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+/* ---------------------- reuseable style end ---------------------- */
