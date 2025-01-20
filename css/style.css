@@ -10,6 +10,21 @@
   --majoretteBlue: #5d58ef;
   --lightWhite: #f7f7f7;
   --gray: #808080;
+  /* font-size */
+  --h1-max: 5.6rem;
+  --h1-min: 3.2rem;
+
+  --h2-max: 4.6rem;
+  --h2-min: 2.6rem;
+
+  --h3-max: 2.5rem;
+  --h3-min: 1.66rem;
+
+  --h4-max: 1.534rem;
+  --h4-min: 0.9rem;
+
+  --p-max: 1.5rem;
+  --p-min: 1.2rem;
 }
 *,
 *::before,
@@ -34,6 +49,21 @@ ul {
 }
 a {
   text-decoration: none;
+}
+h1 {
+  font-size: clamp(var(--h1-min), 5vw, var(--h1-max));
+}
+h2 {
+  font-size: clamp(var(--h2-min), 5vw, var(--h2-max));
+}
+h3 {
+  font-size: clamp(var(--h3-min), 4vw, var(--h3-max));
+}
+h4 {
+  font-size: clamp(var(--h4-min), 3vw, var(--h4-max));
+}
+p {
+  font-size: clamp(var(--p-min), 2vw, var(--p-max));
 }
 /* ---------------------- default style end ---------------------- */
 /* ---------------------- reuseable style start ---------------------- */
