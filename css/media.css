@@ -8,6 +8,11 @@
     width: 80%;
   }
   /* ---------------------- banner section end ---------------------- */
+  /* ---------------------- curriculum section start ---------------------- */
+  .curriculum-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* ---------------------- curriculum section end ---------------------- */
 }
 /* ---------------------- laptop style end ---------------------- */
 /* ---------------------- tablet style start ---------------------- */
@@ -25,6 +30,8 @@
     width: 95%;
   }
   /* ---------------------- banner section end ---------------------- */
+  /* ---------------------- curriculum section start ---------------------- */
+  /* ---------------------- curriculum section end ---------------------- */
 }
 /* ---------------------- tablet style end ---------------------- */
 /* ---------------------- mobile style start ---------------------- */
@@ -64,5 +71,10 @@
     width: 100%;
   }
   /* ---------------------- banner section end ---------------------- */
+  /* ---------------------- curriculum section start ---------------------- */
+  .curriculum-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* ---------------------- curriculum section end ---------------------- */
 }
 /* ---------------------- mobile style  ---------------------- */
