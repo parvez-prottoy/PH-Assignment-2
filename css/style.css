@@ -38,7 +38,7 @@
 }
 html {
   scroll-behavior: smooth;
-  font-size: 62.5%;
+  font-size: 62.5%; /* 1rem = 10px */
 }
 body {
   font-family: "Quicksand", serif;
@@ -56,6 +56,8 @@ a {
 }
 h1 {
   font-size: clamp(var(--h1-min), 5vw, var(--h1-max));
+  color: var(--black);
+  font-weight: 700;
 }
 h2 {
   font-size: clamp(var(--h2-min), 5vw, var(--h2-max));
@@ -87,9 +89,10 @@ p {
 /* ---------------------- reuseable style end ---------------------- */
 /* ---------------------- header section start ---------------------- */
 header {
-  padding: 2rem 0;
+  height: 8.2rem;
 }
 .header-container {
+  height: inherit;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -137,3 +140,46 @@ header {
   display: none;
 }
 /* ---------------------- header section end ---------------------- */
+/* ---------------------- banner section start ---------------------- */
+.banner {
+  height: calc(100vh - 8.2rem);
+}
+.banner-container {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.banner-content,
+.banner-img {
+  flex: 1;
+}
+.banner-content h1 {
+  width: 85%;
+}
+.banner-content h1 > span:first-child {
+  color: var(--orange);
+}
+.banner-content h1 > span:last-child {
+  color: var(--skyBlue);
+}
+.banner-text {
+  margin: 2.4rem 0;
+  font-size: 2rem;
+}
+.enroll-btn {
+  padding: 1rem 4.6rem;
+  background: var(--black);
+  transition: opacity 0.3s ease-in-out;
+}
+.enroll-btn:hover {
+  opacity: 80%;
+}
+.banner-img {
+  display: flex;
+  justify-content: end;
+}
+.banner-img img {
+  width: 90%;
+}
+/* ---------------------- banner section end ---------------------- */

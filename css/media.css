@@ -1,16 +1,35 @@
 /* ---------------------- laptop style start ---------------------- */
 @media screen and (max-width: 1282px) {
+  /* ---------------------- banner section start ---------------------- */
+  .banner-container {
+    gap: 2rem;
+  }
+  .banner-content h1 {
+    width: 80%;
+  }
+  /* ---------------------- banner section end ---------------------- */
 }
 /* ---------------------- laptop style end ---------------------- */
 /* ---------------------- tablet style start ---------------------- */
 @media screen and (max-width: 1024px) {
+  /* ---------------------- header section start ---------------------- */
   .navItems {
     display: none;
   }
+  /* ---------------------- header section end ---------------------- */
+  /* ---------------------- banner section start ---------------------- */
+  .banner-container {
+    gap: 0;
+  }
+  .banner-content h1 {
+    width: 95%;
+  }
+  /* ---------------------- banner section end ---------------------- */
 }
 /* ---------------------- tablet style end ---------------------- */
 /* ---------------------- mobile style start ---------------------- */
 @media screen and (max-width: 640px) {
+  /* ---------------------- header section start ---------------------- */
   header {
     border-bottom: 2px solid var(--orange);
   }
@@ -31,5 +50,19 @@
   .hamburger-menu:hover {
     color: var(--orange);
   }
+  /* ---------------------- header section end ---------------------- */
+  /* ---------------------- banner section start ---------------------- */
+  .banner-container {
+    height: auto;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .banner-content {
+    text-align: center;
+  }
+  .banner-img img {
+    width: 100%;
+  }
+  /* ---------------------- banner section end ---------------------- */
 }
 /* ---------------------- mobile style  ---------------------- */
