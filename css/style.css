@@ -277,3 +277,81 @@ header {
   cursor: pointer;
 }
 /* ---------------------- curriculum section end ---------------------- */
+/* ---------------------- stories section start ---------------------- */
+.stories {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(249, 223, 177, 1) 100%
+  );
+  z-index: -1;
+}
+.stories::before {
+  content: "";
+  width: 100%;
+  height: auto;
+  background-image: url("../assets/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.stories-container > h2 {
+  text-align: center;
+}
+.stories-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 8rem;
+}
+.stories-item-1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.stories-item {
+  border-radius: 1.6rem;
+  background: rgb(255, 255, 255);
+}
+.stories-image {
+  position: relative;
+}
+.stories-btn {
+  position: absolute;
+  bottom: -1.6rem;
+  left: 2rem;
+  background-color: var(--orange);
+  padding: 1.4rem 1.8rem;
+  border-radius: 10rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.stories-image > img {
+  border-radius: 1.6rem 1.6rem 0 0;
+}
+.stories-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.stories-item-1 > .stories-text {
+  padding: 6rem 3rem 3.5rem;
+}
+.stories-item-2 > .stories-text,
+.stories-item-3 > .stories-text,
+.stories-item-4 > .stories-text,
+.stories-item-5 > .stories-text {
+  padding: 3rem;
+}
+.stories-item-2 .stories-btn {
+  background: var(--skyBlue);
+}
+.stories-item-3 .stories-btn {
+  background: var(--darkTurquoise);
+}
+.stories-item-4 .stories-btn {
+  background: #95b226;
+}
+.stories-item-5 .stories-btn {
+  background: var(--majoretteBlue);
+}
+/* ---------------------- stories section end ---------------------- */

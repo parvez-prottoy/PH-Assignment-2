@@ -13,6 +13,8 @@
     grid-template-columns: repeat(2, 1fr);
   }
   /* ---------------------- curriculum section end ---------------------- */
+  /* ---------------------- stories section start ---------------------- */
+  /* ---------------------- stories section end ---------------------- */
 }
 /* ---------------------- laptop style end ---------------------- */
 /* ---------------------- tablet style start ---------------------- */
@@ -32,6 +34,24 @@
   /* ---------------------- banner section end ---------------------- */
   /* ---------------------- curriculum section start ---------------------- */
   /* ---------------------- curriculum section end ---------------------- */
+  /* ---------------------- stories section start ---------------------- */
+  .stories-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stories-item-1 {
+    display: none;
+  }
+  .stories-btn {
+    position: absolute;
+    bottom: -1.6rem;
+    left: 2rem;
+    background-color: var(--orange);
+    padding: 0.8rem 1.2rem;
+    border-radius: 10rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  /* ---------------------- stories section end ---------------------- */
 }
 /* ---------------------- tablet style end ---------------------- */
 /* ---------------------- mobile style start ---------------------- */
@@ -76,5 +96,7 @@
     grid-template-columns: repeat(1, 1fr);
   }
   /* ---------------------- curriculum section end ---------------------- */
+  /* ---------------------- stories section start ---------------------- */
+  /* ---------------------- stories section end ---------------------- */
 }
 /* ---------------------- mobile style  ---------------------- */
