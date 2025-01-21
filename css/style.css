@@ -355,3 +355,43 @@ header {
   background: var(--majoretteBlue);
 }
 /* ---------------------- stories section end ---------------------- */
+/* ---------------------- footer section start ---------------------- */
+footer {
+  background: var(--skyBlue);
+  padding: 10rem 0;
+  color: var(--white);
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer-content {
+  grid-column: span 2;
+}
+.footer-content .logo > h2 {
+  color: var(--white);
+}
+.footer-content p {
+  width: 70%;
+  margin-top: 3.5rem;
+  font-size: 2rem;
+}
+.footer-nav > h3,
+.footer-media > h3 {
+  margin-bottom: 3.2rem;
+}
+.footer-navItems {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer-navItems li > a {
+  color: var(--white);
+  font-weight: 500;
+}
+.footer-media > div {
+  display: flex;
+  gap: 1rem;
+}
+/* ---------------------- footer section end ---------------------- */
