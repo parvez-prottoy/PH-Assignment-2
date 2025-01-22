@@ -106,8 +106,23 @@
   .curriculum-content {
     grid-template-columns: repeat(1, 1fr);
   }
+  .side-group {
+    display: none;
+  }
   /* ---------------------- curriculum section end ---------------------- */
   /* ---------------------- stories section start ---------------------- */
+  .stories-btn {
+    bottom: -1rem;
+    left: 1rem;
+    background-color: var(--orange);
+    padding: 0.6rem 1rem;
+  }
+  .stories-item-2 > .stories-text,
+  .stories-item-3 > .stories-text,
+  .stories-item-4 > .stories-text,
+  .stories-item-5 > .stories-text {
+    padding: 2rem;
+  }
   /* ---------------------- stories section end ---------------------- */
   /* ---------------------- footer section start ---------------------- */
   .footer-container {
@@ -115,6 +130,10 @@
   }
   .footer-content {
     grid-column: span 1;
+  }
+  .footer-content .footer-logo > h2 {
+    display: block;
+    margin-left: -1.5rem;
   }
   .footer-content p {
     width: 100%;
