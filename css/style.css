@@ -197,7 +197,6 @@ marquee {
 .curriculum {
   background: url("../assets/bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
 }
 .curriculum-content {
   display: grid;
